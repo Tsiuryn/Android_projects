@@ -1,0 +1,6 @@
+rootProject.name='AndroidBeginner'
+include ':app'
+include ':screenprofile'
+include ':piechartview'
+include ':equalizerview'
+include ':watchview'
