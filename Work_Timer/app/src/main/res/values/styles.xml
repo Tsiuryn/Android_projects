@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="NumberPickerWork" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:fontFamily">@font/font_main</item>
+        <item name="android:textColorTertiary">@color/text_work</item>
+        <item name="background">@android:color/white</item>
+        <item name="android:textColorPrimary">@color/text_work</item>
+        <item name="android:textSize">50sp</item>
+
+    </style>
+    <style name="NumberPickerRelax" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:fontFamily">@font/font_main</item>
+        <item name="android:textColorTertiary">@color/text_work</item>
+        <item name="background">@android:color/white</item>
+        <item name="android:textColorPrimary">@color/text_relax</item>
+        <item name="android:textSize">50sp</item>
+
+    </style>
+
+    <style name="text_fct">
+        <item name="android:textSize">45sp</item>
+        <item name="fontFamily">@font/font_main</item>
+    </style>
+
+</resources>

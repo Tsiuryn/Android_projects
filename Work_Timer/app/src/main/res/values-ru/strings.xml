@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TS_Таймер</string>
+    <string name="road_to_the_dream">Твой Путь к Мечте!</string>
+    <string name="Is_work">НАЧНЕМ?</string>
+    <string name="Relax">ОТДЫХ</string>
+    <string name="Work">РАБОТАЕМ!</string>
+    <string name="reset">сброс</string>
+    <string name="start">старт</string>
+    <string name="skip">пропустить</string>
+    <string name="title_dialog_stop">Поздравляем :)</string>
+    <string name="message_dialog_stop">Вы хотите отдохнуть?</string>
+    <string name="negat_dialog_stop">Отмена</string>
+    <string name="posit_dialog_stop">ДА</string>
+    <string name="title_dialog_relax">Вопрос:</string>
+    <string name="message_dialog_relax">Время отдыха вышло:)</string>
+    <string name="posit_dialog_relax">ОК</string>
+    <string name="notif_title">Таймер работает!</string>
+    <string name="notif_message">Таймер остановится в %s</string>
+    <string name="stop_notif_title">Поздравляем :)</string>
+    <string name="stop_notif_message">Время вышло</string>
+    <string name="database_is_empty">Нет записей</string>
+    <string name="change_time_work">РАБОТА</string>
+    <string name="change_time_relax">ОТДЫХ</string>
+    <string name="change_time_save">сохранить</string>
+</resources>

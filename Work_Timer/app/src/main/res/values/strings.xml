@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">TS_TimerJob</string>
+    <string name="road_to_the_dream">Road to the Dream!</string>
+
+    <string name="Is_work">WORK?</string>
+    <string name="Relax">RELAX</string>
+    <string name="Work">WORK!</string>
+    <string name="reset">reset</string>
+    <string name="start">start</string>
+    <string name="skip">skip</string>
+
+    <string name="title_dialog_stop">Congratulation :)</string>
+    <string name="message_dialog_stop">Do you want to relax? :)</string>
+    <string name="negat_dialog_stop">Cancel</string>
+    <string name="posit_dialog_stop">YES</string>
+
+    <string name="title_dialog_relax">Question:</string>
+    <string name="message_dialog_relax">Relax timer is finished :)</string>
+    <string name="posit_dialog_relax">OK</string>
+
+
+    //timerNotification
+    <string name="notif_title">The Timer is running!</string>
+    <string name="notif_message">The Timer will stop at %s</string>
+
+    //stop timer notific
+    <string name="stop_notif_title">Congratulation :)</string>
+    <string name="stop_notif_message">Timer is finished</string>
+
+    <string name="database_is_empty">Database is empty!</string>
+    <string name="change_time_work">WORK</string>
+    <string name="change_time_relax">RELAX</string>
+    <string name="change_time_save">save</string>
+
+
+</resources>

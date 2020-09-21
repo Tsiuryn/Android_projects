@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="text_work">@android:color/holo_red_light</color>
+    <color name="text_relax">#2C4AE3</color>
+    <color name="background_work">#000000</color>
+    <color name="background_relax">#8C8888</color>
+
+    <color name="enable_fragment">#00B8D4</color>
+    <color name="not_enable_fragment">#BFBDBD</color>
+</resources>
