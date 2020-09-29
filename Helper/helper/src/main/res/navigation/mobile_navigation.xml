@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_calculator">
+
+
+    <fragment
+        android:id="@+id/nav_speed"
+        android:name="com.example.helper.ui.speed.SpeedFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_speed" />
+
+    <fragment
+        android:id="@+id/nav_currency_converter"
+        android:name="com.example.helper.ui.currency.CurrencyConverterFragment"
+        android:label="@string/menu_converter"
+        tools:layout="@layout/fragment_currency_converter" />
+
+    <fragment
+        android:id="@+id/nav_calculator"
+        android:name="com.example.helper.ui.calculator.CalcFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_caclulator" />
+
+    <fragment
+        android:id="@+id/nav_normalization"
+        android:name="com.example.helper.ui.normalization.NormalizationFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_normalization" />
+
+    <fragment
+        android:id="@+id/nav_holder"
+        android:name="com.example.helper.ui.holder.HolderFragment"
+        android:label="@string/menu_holder"
+        tools:layout="@layout/fragment_holder" />
+
+
+</navigation>

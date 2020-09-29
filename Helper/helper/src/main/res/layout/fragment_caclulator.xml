@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme.NoActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_calculator_fon"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:id="@+id/edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@drawable/background_calculator_edit"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:digits=""
+            android:inputType="textMultiLine|phone"
+            android:lines="4"
+            android:focusable="true"
+            android:cursorVisible="true"
+            android:focusableInTouchMode="true"
+            android:focusedByDefault="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="36sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/result_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:background="@drawable/background_calculator_edit"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:layout_marginLeft="8dp"
+            android:lines="1"
+            android:text="0"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/numberContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/first_line"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonCancel"
+                style="@style/button2"
+                android:text="C" />
+
+            <ImageButton
+                android:id="@+id/buttonBackspace"
+                style="@style/button2"
+                android:src="@drawable/ic_keyboard_backspace"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/second_line"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button7"
+                style="@style/button1"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/button8"
+                style="@style/button1"
+                android:text="8" />
+
+<!--            <Button-->
+<!--                android:id="@+id/button9"-->
+<!--                style="@style/button1"-->
+<!--                android:text="9" />-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/button9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:orientation="vertical"
+                android:background="@drawable/button_selector1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="3×000"
+                    android:textColor="@color/text_background"
+                    android:textSize="@dimen/text_back"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="top"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="9"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/main_text_lay"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--            <Button-->
+<!--                android:id="@+id/buttonDivis"-->
+<!--                style="@style/button3"-->
+<!--                android:text="÷" />-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/buttonDivis"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:orientation="vertical"
+                android:background="@drawable/button_selector3">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="tan()"
+                    android:textColor="@color/text_background"
+                    android:textSize="@dimen/text_back"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="top"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="÷"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/main_text_lay"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <Button
+                android:id="@+id/buttonScOp"
+                style="@style/button3"
+                android:text="(" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/third_line"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/button1"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/button1"
+                android:text="5" />
+
+<!--            <Button-->
+<!--                android:id="@+id/button6"-->
+<!--                style="@style/button1"-->
+<!--                android:text="6" />-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/button6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:orientation="vertical"
+                android:background="@drawable/button_selector1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="2×000"
+                    android:textColor="@color/text_background"
+                    android:textSize="@dimen/text_back"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="top"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="6"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/main_text_lay"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--            <Button-->
+<!--                android:id="@+id/buttonMultip"-->
+<!--                style="@style/button3"-->
+<!--                android:text="×" />-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/buttonMultip"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:orientation="vertical"
+                android:background="@drawable/button_selector3">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="sin()"
+                    android:textColor="@color/text_background"
+                    android:textSize="@dimen/text_back"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="top"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="×"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/main_text_lay"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/buttonScCl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:orientation="vertical"
+                android:background="@drawable/button_selector3">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="(....)"
+                    android:textColor="@color/text_background"
+                    android:textSize="@dimen/text_back"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="top"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text=")"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/main_text_lay"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--            <Button-->
+<!--                android:id="@+id/buttonScCl"-->
+<!--                style="@style/button3"-->
+<!--                android:text=")" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fourth_line"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/button1"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/button1"
+                android:text="2" />
+
+<!--            <Button-->
+<!--                android:id="@+id/button3"-->
+<!--                style="@style/button1"-->
+<!--                android:text="3" />-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/button3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:orientation="vertical"
+                android:background="@drawable/button_selector1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="000"
+                    android:textColor="@color/text_background"
+                    android:textSize="@dimen/text_back"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="top"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/main_text_lay"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!--            <Button-->
+<!--                android:id="@+id/buttonMinus"-->
+<!--                style="@style/button3"-->
+<!--                android:text="-" />-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/buttonMinus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:orientation="vertical"
+                android:background="@drawable/button_selector3">
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="cos()"
+                    android:textColor="@color/text_background"
+                    android:textSize="@dimen/text_back"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/main_text_lay"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView28" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--            <Button-->
+<!--                android:id="@+id/buttonRow"-->
+<!--                style="@style/button3"-->
+<!--                android:text="^" />-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/buttonRow"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:orientation="vertical"
+                android:background="@drawable/button_selector3">
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="xn"
+                    android:textColor="@color/text_background"
+                    android:textSize="@dimen/text_back"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="√"
+
+                    android:textColor="@color/colorAccent"
+                    android:textSize="45sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView27" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fifth_line"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button0"
+                style="@style/button1"
+                android:onClick="add0"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/buttonDot"
+                style="@style/button1"
+                android:text="." />
+
+            <Button
+                android:id="@+id/buttonPercent"
+                style="@style/button1"
+                android:text="%" />
+
+<!--            <Button-->
+<!--                android:id="@+id/buttonPlus"-->
+<!--                style="@style/button3"-->
+<!--                android:text="+" />-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/buttonPlus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:orientation="vertical"
+                android:background="@drawable/button_selector3">
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="π"
+                    android:textColor="@color/text_background"
+                    android:textSize="@dimen/text_back"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/main_text_lay"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView29" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/buttonResult"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:orientation="vertical"
+                android:background="@drawable/button_selector3">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:src="@drawable/save"
+                    android:textColor="@null"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="="
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/main_text_lay"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--            <Button-->
+<!--                android:id="@+id/buttonResult"-->
+<!--                style="@style/button3"-->
+<!--                android:text="=" />-->
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

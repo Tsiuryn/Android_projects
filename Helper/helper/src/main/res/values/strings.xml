@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">TS_Helper</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Тюрин Александр</string>
+    <string name="nav_header_subtitle">7994005@gmail.com</string>
+    <string name="nav_header_phone">+375 (44) 799 40 05</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">РАСЧЕТ ТРУБОПРОВОДА</string>
+    <string name="menu_gallery">КАЛЬКУЛЯТОР</string>
+    <string name="menu_slideshow">НОРМАЛИЗАЦИЯ</string>
+    <string name="menu_holder">РАСЧЕТ ВЫДЕРЖИВАТЕЛЯ</string>
+    <string name="menu_converter">КОНВЕРТЕР ВАЛЮТ</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_start">СТАРТ</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Example1">Пример 1:\n В танке 2000 л молока с мдж 2.5%.
+        Сколько необходимо добавить сливок с МДЖ 30%, чтобы получить молоко с мдж 3.2%?
+\n (Кобм=2000, Жобм=2.5, Жсл=30, Жм=3.2, Ксл-?).</string>
+
+    <string name="Example2">Пример 2:\n Производительность сепаратора 25000л ,молоко с МДЖ 3,3% . Сколько получиться ОБМ  МДЖ 0,05% , если сливки будут жирностью 20% ?
+\n (Км = 25000, Жм. = 3.3, Жобм - 0.05, Жсл = 20, Кобм - ?) </string>
+</resources>

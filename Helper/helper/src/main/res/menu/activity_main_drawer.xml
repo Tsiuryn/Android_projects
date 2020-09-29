@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_calculator"
+            android:icon="@drawable/ic_calc"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_speed"
+            android:icon="@drawable/ic_speed_icon"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_holder"
+            android:icon="@drawable/ic_pipe"
+            android:title="@string/menu_holder" />
+        <item
+            android:id="@+id/nav_normalization"
+            android:icon="@drawable/ic_normalization"
+            android:title="@string/menu_slideshow" />
+
+        <item
+            android:id="@+id/nav_currency_converter"
+            android:icon="@drawable/ic_menu_symbol_currency"
+            android:title="@string/menu_converter" />
+    </group>
+
+
+</menu>
