@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MainText" parent="Base.Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/times_new_roman</item>
+        <item name="font">@id/italic</item>
+        <item name="android:textSize">22sp</item>
+
+    </style>
+
+    <style name="listText" parent="Base.Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/times_new_roman</item>
+        <item name="android:textSize">12sp</item>
+
+    </style>
+
+    <style name="listTitle" parent="Base.Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/times_new_roman</item>
+        <item name="android:textSize">18sp</item>
+
+    </style>
+
+    <style name="TextDescription" parent="Base.Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/times_new_roman</item>
+        <item name="android:textSize">10sp</item>
+
+    </style>
+</resources>

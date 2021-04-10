@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CoronovirusApp</string>
+    <string name="info_title">ИНФОРМАЦИЯ В МИРЕ:</string>
+    <string name="info_total_confirmed">ЗАБОЛЕВШИЕ:\n</string>
+    <string name="info_total_death">УМЕРШИЕ:\n</string>
+    <string name="info_total_recovered">ВЫЗДОРОВЕВШИЕ:\n</string>
+    <string name="item_confirmed">Зараженные:&#160;</string>
+    <string name="item_death">Умершие:&#160;</string>
+    <string name="item_recovered">Выздоровевшие:&#160;</string>
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CoronovirusApp</string>
+
+    <string name="info_title">INFORMATION IN THE WORLD</string>
+    <string name="info_total_confirmed">TOTAL CONFIRMED: \n</string>
+    <string name="info_total_death">TOTAL DEATH: \n</string>
+    <string name="info_total_recovered">TOTAL RECOVERED: \n</string>
+
+    <string name="item_confirmed">Confirmed:&#160;</string>
+    <string name="item_death">Death:&#160;</string>
+    <string name="item_recovered">"Recovered:&#160; "</string>
+</resources>
