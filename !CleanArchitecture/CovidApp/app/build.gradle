@@ -1,10 +1,11 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'androidx.navigation.safeargs.kotlin'
 }
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 29
     buildToolsVersion "30.0.2"
 
     buildFeatures {
@@ -59,6 +60,9 @@ dependencies {
     implementation "org.koin:koin-androidx-viewmodel:$koin_version"
 // Koin AndroidX Fragment features
     implementation "org.koin:koin-androidx-fragment:$koin_version"
+
+    //NavDirections
+    def nav_version = "2.3.0"
 
     implementation project(path: ':domain')
     implementation project(path: ':data')
