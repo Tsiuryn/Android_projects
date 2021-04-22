@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BestForecast</string>
+    <string name="start_sign_up">Зарегистрироваться</string>
+    <string name="start_sign_in">Войти</string>
+    <string name="start_open_without_registration">Войти без регистрации</string>
+    <string name="reg_title_up">ПОЖАЛУЙСТА ЗАРЕГИСТРИРУЙТЕСЬ</string>
+    <string name="reg_title_in">ВВЕДИТЕ ПОЧТУ И ПАРОЛЬ</string>
+    <string name="reg_name">Ваше имя</string>
+    <string name="reg_email">Почта</string>
+    <string name="reg_password">Пароль</string>
+    <string name="reg_error_text">Поле не правильно заполнено!</string>
+    <string name="reg_incorrect_psw_email">Почта или Пароль не правильно введены</string>
+    <string name="settings_time">Время (чч:мм): %s: %s</string>
+    <string name="city_hint">Поиск города</string>
+    <string name="city_message">Ничего не сохранено</string>
+    <string name="city_added">Город добавлен</string>
+    <string name="city_find">Город не найден</string>
+    <string name="city_empty">Поле не может быть пустым</string>
+    <string name="city_dial_message">Сделать городом по умолчанию</string>
+    <string name="notific_title">Обновление данных</string>
+    <string name="settings_update_data">Прогноз погоды будет обновлен каждые %s часов %s минут</string>
+    <string name="settings_cancel_update">Отменено обновление прогноза погоды</string>
+    <string name="reg_title">Пожалуйста, заполните!</string>
+    <string name="reg_register">Регистрация</string>
+    <string name="settings_zero">Часы и минуты не могут одновременно равняться нулю</string>
+</resources>

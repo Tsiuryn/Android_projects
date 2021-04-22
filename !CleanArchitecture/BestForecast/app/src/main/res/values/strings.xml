@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">BestForecast</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="start_sign_up">Sign up</string>
+    <string name="start_sign_in">Sign in</string>
+    <string name="start_open_without_registration">Open without registration</string>
+    <string name="reg_title_up">PLEASE REGISTER</string>
+    <string name="reg_title_in">ENTER YOUR EMAIL AND PASSWORD</string>
+    <string name="reg_name">Your name</string>
+    <string name="reg_email">Email</string>
+    <string name="reg_password">Password</string>
+    <string name="reg_error_text">The field is not filled in correctly!</string>
+    <string name="reg_incorrect_psw_email">Email or Password doesn\'t correct</string>
+    <string name="icon_url">http://openweathermap.org/img/wn/%s@2x.png</string>
+    <string name="settings_time">Time (hh:mm): %s : %s</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="city_hint">Search city</string>
+    <string name="city_message">Nothing to show</string>
+    <string name="city_added">City added</string>
+    <string name="city_find">City didn\'t find</string>
+    <string name="city_empty">City can\'t be empty</string>
+    <string name="city_dial_message">Get city by default</string>
+
+    <string name="notific_title">Update data</string>
+    <string name="settings_update_data">The weather forecast will be updated every %s hours and %s minutes</string>
+    <string name="settings_cancel_update">Weather forecast update canceled</string>
+    <string name="reg_register">register</string>
+    <string name="settings_zero">Hours and minutes cannot be zero at the same time</string>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.ts.alex.bestforecast.ui.start.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start">
+        <action
+            android:id="@+id/action_startFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_forecastMainFragment"
+            app:destination="@id/forecastMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.ts.alex.bestforecast.ui.registration.RegistrationFragment"
+        android:label="RegistrationFragment"
+        tools:layout="@layout/fragment_registration">
+        <argument
+            android:name="isSignUp"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_registrationFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_registrationFragment_to_forecastMainFragment"
+            app:destination="@id/forecastMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forecastMainFragment"
+        android:name="com.ts.alex.bestforecast.ui.forecast.main_screen.ForecastMainFragment"
+        android:label="ForecastMainFragment"
+        tools:layout="@layout/fragment_forecast_main">
+        <action
+            android:id="@+id/action_forecastMainFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.ts.alex.bestforecast.ui.forecast.settings.SettingsFragment"
+        android:label="SettingsFragment"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_settingsFragment_to_forecastMainFragment"
+            app:destination="@id/forecastMainFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_cityFragment"
+            app:destination="@id/cityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cityFragment"
+        android:name="com.ts.alex.bestforecast.ui.forecast.city_screen.CityFragment"
+        tools:layout="@layout/fragment_city"
+        android:label="CityFragment" >
+        <action
+            android:id="@+id/action_cityFragment_to_forecastMainFragment"
+            app:destination="@id/forecastMainFragment" />
+    </fragment>
+</navigation>
